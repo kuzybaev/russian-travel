@@ -1,8 +1,8 @@
 .place__paragraph-wrapper {
-
+	grid-area: paragraph;
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 570px){
 	.place__paragraph-wrapper {
 		margin: 0 16px;
 	}

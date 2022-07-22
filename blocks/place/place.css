@@ -1,7 +1,13 @@
 .place {
+	padding-left: 24px;
+	padding-right: 24px;
 	padding-bottom: 80px;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	/*grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));*/
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-areas: 
+		"title website"
+		"image paragraph";
 	column-gap: 40px;
 }
 
@@ -31,6 +37,19 @@
 	}
 	.place:last-child {
 		padding-bottom: 66px;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.place {
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+			"title"
+			"website"
+			"image"
+			"paragraph";
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
