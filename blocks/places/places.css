@@ -6,20 +6,20 @@
 
 @media screen and (max-width: 1024px) {
 	.places {
-		max-width: 928px;
+		padding-left: 48px;
+		padding-right: 48px;
 	}
 }
 
 @media screen and (max-width: 768px) {
 	.places {
-		max-width: 720px;
-		padding-top: 88px;
+		padding: 88px 24px 0;
 	}
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 570px) {
 	.places {
-		max-width: 320px;
-		padding-top: 64px;
+		padding: 64px 0 0;
 	}
 }
+

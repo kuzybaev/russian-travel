@@ -1,9 +1,6 @@
 .place {
-	padding-left: 24px;
-	padding-right: 24px;
 	padding-bottom: 80px;
 	display: grid;
-	/*grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));*/
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-areas: 
 		"title website"
@@ -24,7 +21,7 @@
 @media screen and (max-width: 768px) {
 	.place {
 		column-gap: 28px;
-		padding-bottom: 72px;
+		padding-bottom: 73px;
 	}
 	.place:last-child {
 		padding-bottom: 90px;
@@ -39,8 +36,10 @@
 			"website"
 			"image"
 			"paragraph";
-		padding-left: 0;
-		padding-right: 0;
+		padding-bottom: 50px;
+	}
+	.place:last-child {
+		padding-bottom: 66px;
 	}
 }
 
