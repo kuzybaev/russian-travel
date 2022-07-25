@@ -3,16 +3,18 @@
 	margin-bottom: 48px;
 	font-size: 72px;
 	font-weight: 900;
+	line-height: 1.06;
 	grid-area: title;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) and (min-width: 571px) {
 	.place__title {
 		font-size: 42px;
 		line-height: 1.1;
 		white-space: pre-line;
 	}
 }
+
 
 @media screen and (max-width: 570px) {
 	.place__title {
